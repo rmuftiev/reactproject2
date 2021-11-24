@@ -9,8 +9,7 @@ pipeline {
     stage('Install dependencies') {
 
       steps {
-        sh 'export NODE_OPTIONS=--openssl-legacy-provider'
-	sh 'npm install && npm run build'
+     	sh 'npm install && npm run build'
       }
     }  
 
